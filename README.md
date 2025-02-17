@@ -53,7 +53,7 @@
      URL: http://localhost:5000/api/auth/login <br>
      Body : <br>
           {  <br>
-            "email": "jbiswajit@gmail.com", <br>
+            "email": "biswajit@gmail.com", <br>
             "password": "1234576" <br>
           } <br>
 4. Add a Train <br>
