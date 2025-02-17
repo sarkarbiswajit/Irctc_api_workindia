@@ -77,6 +77,9 @@
    URL: http://localhost:5000/api/booking/book <br>
    Headers: <br>
      Authorization: Bearer your_jwt_token <br>
+   Body: <br>
+     { "train_id": 1 } <br>
+
 7.  Get User's Booking Details  <br>
      Method: GET <br>
      URL: http://localhost:5000/api/booking/details <br>
