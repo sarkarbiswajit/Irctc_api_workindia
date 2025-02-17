@@ -34,3 +34,52 @@
 
 5. And then now run 'node server.js' <br>
 
+
+# For Testing 
+
+1. Open Postman <br>
+2. Register a user <br>
+     Method: POST <br>
+     URL: http://localhost:5000/api/auth/register <br>
+     Body : <br>
+        { <br>
+            "name": "Biswajit Sarkar", <br>
+            "email": "biswajit@gmail.com", <br>
+            "password": "1234576", <br>
+            "role": "admin" <br>
+          } <br>
+3. Login User  <br>
+     Method: POST <br>
+     URL: http://localhost:5000/api/auth/login <br>
+     Body : <br>
+          {  <br>
+            "email": "jbiswajit@gmail.com", <br>
+            "password": "1234576" <br>
+          } <br>
+4. Add a Train <br>
+     Method: POST <br>
+     URL: http://localhost:5000/api/train/add <br>
+     Headers: <br>
+     x-api-key: 1234576 <br>
+     Body: <br>
+        { <br>
+            "name": "Rajdhani Express", <br>
+            "source": "Delhi", <br>
+            "destination": "Mumbai", <br>
+            "total_seats": 100 <br>
+          } <br>
+ 5. Get Available Trains <br>
+      Method: GET <br>
+     URL: http://localhost:5000/api/train/search?source=Delhi&destination=Mumbai <br>
+
+6. Book a Seat <br>
+   Method: POST <br>
+   URL: http://localhost:5000/api/booking/book <br>
+   Headers: <br>
+     Authorization: Bearer your_jwt_token <br>
+7.  Get User's Booking Details  <br>
+     Method: GET <br>
+     URL: http://localhost:5000/api/booking/details <br>
+     Headers: <br>
+     Authorization: Bearer your_jwt_token <br>
+   
